@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
 })
 
 function enterLogin() {
-    location = "/home/vikash/Expense_Manager/login/index.html"
+    location.href = "../login/index.html"
 }
 
 function handleInput() {
@@ -42,6 +42,12 @@ function handleInput() {
         return
     }
 
+    
+ 
+    document.getElementById('minName').textContent=""
+    document.getElementById('minPass').textContent=""
+    document.getElementById('error').textContent=""
+
     var payload = {
         name: name,
         email: email,
@@ -50,6 +56,7 @@ function handleInput() {
     }
     if (data.length == 0) {
         data.push(payload)
+        alert('Registered Successfully')
         saveData('data', data);
     }
     else {
@@ -62,6 +69,7 @@ function handleInput() {
         }
         if (flag == 0) {
             data.push(payload)
+            alert('Registered Successfully')
             saveData('data', data);
         }
         else {
@@ -69,6 +77,8 @@ function handleInput() {
             exists.textContent = "!Account Already Exists"
         }
     }
+
+    
 }
 function loadData(key) {
     return JSON.parse(localStorage.getItem(key))

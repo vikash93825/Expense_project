@@ -64,3 +64,9 @@ h1{
   h1,h2{
     color: rebeccapurple;
   }
+
+  #heading{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+  }

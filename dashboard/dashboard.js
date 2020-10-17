@@ -85,6 +85,7 @@ function addTransactions(){
     // console.log(email)
     for(var i=0;i<data.length;i++){
         if(email==data[i]['email']){
+            localStorage.setItem('dash',JSON.stringify(data[i]))
             data[i].transactions.push(transaction)
             saveData('data',data)
             showTransactions(data[i]['transactions'] )
@@ -101,6 +102,9 @@ function showTransactions(details ){
     // console.log(details)
     var tbody=document.getElementById('tbody');
     tbody.innerHTML=""
+    // var tbody=document.getElementById('tbody');
+    
+    // tbody.innerHTML=""
     let count=details.length-5;
     for(let i=details.length-1;i>=count;i--) {
         

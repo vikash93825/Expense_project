@@ -1,0 +1,52 @@
+#cont{
+    text-align: center;
+    font-size:  30px;
+    color:red;
+    border:1px solid red;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background:none;
+    border: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  #result{
+      text-align: center;
+      font-size:20px;
+  }
+  #tran{
+   padding-left: 150px;
+  }
+  #details{
+      border: 1px;
+      width: 80%;
+      border-collapse: collapse;
+      
+  }
+  #details th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+  }

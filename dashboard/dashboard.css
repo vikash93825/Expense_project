@@ -46,7 +46,6 @@ h1{
   }
   #name, #btn {
     margin-left: 85%;
-    
     right: 100px;
     width: 10%;
     text-align: center;
@@ -69,4 +68,16 @@ h1{
     text-align: center;
     color: red;
     font-size: 30px;
+  }
+  #ledger{
+    float:right;
+    display: block;
+    position: relative;
+    bottom:80px;
+    background:rgb(122, 224, 238)
+
+  }
+  a{
+    text-decoration: none;
+    color:  rebeccapurple;
   }

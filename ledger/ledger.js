@@ -5,9 +5,6 @@ window.addEventListener('load', function () {
     var credit = document.getElementById('credit');
     credit.addEventListener('click', handleCredit);
 
-    var cred = document.getElementById('cred')
-    cred.innerHTML=""
-
     var debit = document.getElementById('debit');
     debit.addEventListener('click', handleDebit);
 
@@ -29,6 +26,51 @@ function handleCredit() {
 
     for (let i = 0; i < credit['transactions'].length; i++) {
         if (credit['transactions'][i]['type'] == 'credit') 
+        {
+            var tbody = document.createElement('tbody');
+
+            var tag = document.createElement('tr');
+
+            var td = document.createElement('td');
+
+
+            var td1 = document.createElement('td');
+            td1.textContent = credit['transactions'][i]['title']
+
+            var td2 = document.createElement('td');
+            td2.textContent = credit['transactions'][i]['type']
+
+            var td3 = document.createElement('td');
+            td3.textContent = credit['transactions'][i]['amount']
+
+            tag.append(td, td1, td2, td3);
+
+            tbody.append(tag)
+
+        }
+        table.append(tbody)
+        creditDiv.append(table)
+        result.append(creditDiv)
+
+    };
+
+}
+function handleDebit(){
+    var tran = document.getElementById('tran')
+    tran.innerHTML = "";
+
+    var credit = JSON.parse(localStorage.getItem('dash')) || ""
+
+    var result = document.getElementById('result')
+
+    var creditDiv = document.createElement('div')
+    creditDiv.setAttribute('id','cred')
+
+    var table = document.createElement('table')
+    table.setAttribute('id','details')
+
+    for (let i = 0; i < credit['transactions'].length; i++) {
+        if (credit['transactions'][i]['type'] == 'debit') 
         {
             var tbody = document.createElement('tbody');
 

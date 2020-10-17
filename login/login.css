@@ -1,6 +1,11 @@
 body{
     background:linear-gradient( rgba(25, 102, 112), rgba(176,224,230));
 }
+#heading{
+    color: red;
+    font-size: 35px;
+    text-align: center;
+}
 p{
     white-space: pre-line;
     line-height: 1.6;
@@ -8,7 +13,7 @@ p{
 form{
     display: inline-block;
     padding:10px;
-    margin:10% 30%;
+    margin:5% 33%;
     background:white;
     width: 30%;
     border: 1px solid #888;

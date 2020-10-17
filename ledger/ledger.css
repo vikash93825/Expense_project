@@ -1,8 +1,10 @@
+body{
+    background:linear-gradient( rgba(25, 102, 112), rgba(176,224,230))
+}
 #cont{
     text-align: center;
     font-size:  30px;
     color:red;
-    border:1px solid red;
 }
 
 ul {
@@ -10,7 +12,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(38, 38, 46);
   }
   
   li {
@@ -28,7 +30,7 @@ ul {
   }
   
   li a:hover {
-    background-color: #111;
+    background-color: rgb(17, 17, 17);
   }
 
   #result{

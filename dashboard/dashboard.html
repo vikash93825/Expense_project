@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <div id="loginUser">
-        <div id="name">vikash</div>
-    </div>
+    <p id ="heading">Expense Manager</p>
+     <div id="name"></div>
     <h1>Dashboard</h1>
     <div id='cont'>
         <div id="box-1">
@@ -33,7 +32,7 @@
         <div>
         Title: <input type="text" name="title" id="title">
     </div>
-    <div>
+    <div  >
           Type:
         Credit <input type="radio" name="type" id="type" value="credit">
         Debit <input type="radio" name="type" id="type" value="debit">
@@ -46,7 +45,7 @@
         </div>
     </form>
     <h1>Transaction Details</h1>
-     <table id="details">
+     <table id="details" border="1">
         <thead>
             <th>
                 <td>Title</td>
@@ -55,43 +54,7 @@
                 <td>Timestamp</td>
              </th>
         </thead>
-        <tbody>
-            <tr id="list-1">
-                <td>1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr id="list-2">
-                <td>2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr id="list-3">
-                <td>3</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr id="list-4">
-                <td>4</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr id="list-5">
-                <td>5</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
+        <tbody id="tbody"></tbody>
      </table>
     <script src="dashboard.js"></script>
 </body>

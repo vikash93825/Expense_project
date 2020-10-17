@@ -1,3 +1,6 @@
+body{
+  background:linear-gradient( rgba(25, 102, 112), rgba(176,224,230));
+}
 h1{
      width: 80%;
      text-align: justify;
@@ -16,59 +19,12 @@ h1{
     padding: 10px;
 }
 #cont>div>h2{
-    color:white;
+     
     background-color: rgb(122, 224, 238);
     height: 40px;
     line-height: 40px;
 }
-/* Style The Dropdown Button */
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    width:80%;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  #box-3 {
-    position: relative;
-    display: inline-block;
-     
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 75%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content div {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content div:hover {background-color: #f1f1f1}
-  
-  /* Show the dropdown menu on hover */
-  #box-3:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  #box-3:hover .dropbtn {
-    background-color: #3e8e41;
-  }
+
   #form, #details{
       border: 1px solid gainsboro;
       width:80%;
@@ -88,9 +44,23 @@ h1{
     text-align: center;
     border:1px solid red;
   }
-  #name{
-    position: absolute;
-    right: 40px;
+  #name, #btn {
+    margin-left: 85%;
+    
+    right: 100px;
     width: 10%;
     text-align: center;
+    font-weight: bolder;
+    color: purple;
+  }
+  #name{
+    margin-bottom: 20px;
+    font: outline;
+    font-size: 25px;
+  }
+  #main{
+    background-color: rgb(122, 224, 238);
+  }
+  h1,h2{
+    color: rebeccapurple;
   }

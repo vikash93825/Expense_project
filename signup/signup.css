@@ -1,5 +1,5 @@
 body{
-    background:rgb(122, 224, 238);
+    background:linear-gradient( rgba(25, 102, 112), rgba(176,224,230))
 }
 #error{
     color: red;

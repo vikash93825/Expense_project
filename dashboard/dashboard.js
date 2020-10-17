@@ -1,11 +1,54 @@
+function calculator(){
+    let  sum=0;
+    let diff=0;
+   function credit(c){
+      return sum=sum+c;
+   }
+   function debit(d){
+      return diff=diff+d;
+   }
+   function balance(){
+      return  sum-diff;
+   }
+   function res(){
+       return sum;
+   }
+   function res1(){
+       return diff;
+   }
+
+   return { credit, debit, balance, res, res1 }
+}
+
+var cal=calculator();
+
+function credit(amount){
+     cal.credit(amount);
+     var income=document.getElementById('income');
+     income.textContent="Rs:" + cal.res()
+}
+
+function  debit(amount){
+    cal.debit(amount);
+    var  expense=document.getElementById('expense');
+    expense.textContent="Rs:" + cal.res1()
+}
+
+
 window.addEventListener('load',function(){
     var d = JSON.parse(localStorage.getItem('loginUser'))
     var logged = document.getElementById('name');
     logged.textContent =  d['name']
     var form=document.getElementById('form');
     form.addEventListener('submit',addTransactions)
+
+    document.getElementById('btn').addEventListener('click',logOut)
     
 })
+
+function logOut(){
+    location.href="../login/index.html"
+}
 
 function loadData(key) {
     return JSON.parse(localStorage.getItem(key))
@@ -24,6 +67,16 @@ function addTransactions(){
     var amount= Number(form.get('amount'))
 
    var data= JSON.parse(localStorage.getItem('data'))
+
+   if(type=="debit"){
+       debit(amount)
+   }
+   else{
+       credit(amount)
+   }
+
+  var balance=document.getElementById('balance');
+  balance.textContent="Rs:" + cal.balance();
     
     var transaction={title: title, type:type, amount:amount, timestamp:new Date().toUTCString()}
     var d = JSON.parse(localStorage.getItem('loginUser'))
@@ -37,13 +90,17 @@ function addTransactions(){
             showTransactions(data[i]['transactions'] )
         }
     }
+
+    document.getElementById('title').value=""
+    document.getElementById('amount').value=""
+    document.getElementById('type').value=""
 }
 
 function showTransactions(details ){
     // var details= JSON.parse(localStorage.getItem('data'))[0]['transactions']
     // console.log(details)
-    // var tbody=document.getElementById('tbody');
-    // tbody.innerHTML=""
+    var tbody=document.getElementById('tbody');
+    tbody.innerHTML=""
     let count=details.length-5;
     for(let i=details.length-1;i>=count;i--) {
         
@@ -71,6 +128,8 @@ function showTransactions(details ){
         
         tbody.append(tag)
     };
-
+    
     
 }
+
+ 

@@ -1,0 +1,83 @@
+body{
+  background:linear-gradient( rgba(25, 102, 112), rgba(176,224,230));
+}
+h1{
+     width: 80%;
+     text-align: justify;
+     margin:5% auto auto auto;
+}
+#cont{
+    margin: 20px auto auto auto;
+    display:flex;
+    height: 150px;
+    width: 80%;
+}
+#cont>div{
+    border: 1px solid rgb(221, 201, 201);
+    width:33%;
+    margin:5px;
+    padding: 10px;
+}
+#cont>div>h2{
+     
+    background-color: rgb(122, 224, 238);
+    height: 40px;
+    line-height: 40px;
+}
+
+  #form, #details{
+      border: 1px solid gainsboro;
+      width:80%;
+      margin: 20px auto auto auto;
+      height: 130px;
+      padding:10px;
+  }
+  #form>div{
+      padding: 5px;
+      margin:auto;
+  }
+
+  #loginUser{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border:1px solid red;
+  }
+  #name, #btn {
+    margin-left: 85%;
+    right: 100px;
+    width: 10%;
+    text-align: center;
+    font-weight: bolder;
+    color: purple;
+  }
+  #name{
+    margin-bottom: 20px;
+    font: outline;
+    font-size: 25px;
+  }
+  #main{
+    background-color: rgb(122, 224, 238);
+  }
+  h1,h2{
+    color: rebeccapurple;
+  }
+
+  #heading{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+  }
+  #ledger{
+    float:right;
+    display: block;
+    position: relative;
+    bottom:80px;
+    background:rgb(122, 224, 238)
+
+  }
+  a{
+    text-decoration: none;
+    color:  rebeccapurple;
+  }

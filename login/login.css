@@ -5,6 +5,7 @@ body{
     color: red;
     font-size: 35px;
     text-align: center;
+
 }
 p{
     white-space: pre-line;
@@ -60,4 +61,5 @@ img.avatar {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: red;
+
 }

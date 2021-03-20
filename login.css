@@ -1,8 +1,9 @@
-body{
+body,html{
     background-image: url("https://image.shutterstock.com/image-photo/accounting-report-spreadsheet-business-women-260nw-1056258833.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     /* background:linear-gradient( rgba(25, 102, 112), rgba(176,224,230)); */
+    height: 100%;
 }
 #heading{
     color: red;
@@ -17,7 +18,7 @@ p{
 form{
     display: inline-block;
     padding:10px;
-    margin:5% 33%;
+    margin:5% 30%;
     background:white;
     width: 30%;
     border: 1px solid #888;
